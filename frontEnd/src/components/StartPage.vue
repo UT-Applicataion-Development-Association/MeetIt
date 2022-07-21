@@ -1,7 +1,9 @@
 <template>
-  <div class="background">
-    <button id="b"><b>Start</b></button>
 
+  <div id="start">
+    <main>
+    <button id="b"><b>Start</b></button>
+    </main>
 
   </div>
   
@@ -13,19 +15,24 @@
 <script>
     export default {
       name: "StartPage"
-      
-    }
-
+      };
 </script>
 
 <style>
+* {
+  margin:0;
+  padding:0;
 
-html { 
-  background: url(/public/starterBg.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+}
+
+#start{
+  background-image: url('/public/starterBg.png');
   background-size: cover;
+  background-position: bottom;
+}
+
+main {
+  min-height:100vh; 
 }
 
 #b{
